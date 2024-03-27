@@ -35,7 +35,7 @@ p{
 
 
 
-.navbar-items{
+.navbar{
     width:  18%;
     height: 100dvh;
     background-color: #F8F9FA;
@@ -48,31 +48,48 @@ p{
     padding-block: 40px;
 }
 
-.minimiser-logo-container{
+.navbar.navToggle{
+    width: 8%;
+}
+
+.minimizer-logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 24px 0 24px; 
 }
+.minimizer-logo-container.navToggle{
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+}
 
-.minimiser-logo-container .company-logo {
+.minimizer{
+    cursor: pointer;
+}
+
+.minimizer-logo-container .company-logo {
     padding-inline: 22px;
 }
 
-.minimiser-logo-container .company-logo > img{
+.minimizer-logo-container .company-logo > img{
     width: 60px;
     height: 60px;
 }
 
-.navbar-items > ul{
+.navbar-items{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 80px 0 0 24px;
 }
+.navbar-items.navToggle{
+    padding: 0;
+    padding-top: 40px;
+}
 
-.navbar-items > ul > li{
+.navbar-items> li{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -80,23 +97,27 @@ p{
     color: #6B7280;
 }
 
-.navbar-items > ul > li  p{
+.navbar-title{
     font-size: 14px;
     line-height: 16px;
+    display: block;
+}
+.navbar-title.navToggle{
+    display: none;
 }
 
-.navbar-items .nav-dashboard{
+.navbar .nav-dashboard{
     color: #296BBC;
     font-weight: 400;
 }
 
 
-.navbar-items .custom-nav-dashboard-icon{
+.navbar .custom-nav-dashboard-icon{
     height: 20px;
     width: 20px;
 }
 
-.navbar-items .nav-settings{
+.navbar .nav-settings{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -107,21 +128,44 @@ p{
     gap: 8px;
 }
 
+.arrow-container{
+    display: block;
+}
+.arrow-container.navToggle{
+    display: none;
+}
+
 .arrow-up{
     height: 22px; 
     width: 22px; 
     display: none;
     cursor: pointer;
+    animation-duration: 1sec;
 }
+.arrow-up.active{
+    display: block;
+}
+
 .arrow-down{
     height: 22px;
     width: 22px;
     cursor: pointer;
     display: block;
+    animation-duration: 1sec;
 }
+.arrow-down.active{
+    display: none;
+}
+
 
 .nav-settings-items{
     padding-inline: 11px;
+    display: none;
+}
+.nav-settings-items.active{
+    display: block;
+}
+.nav-settings-items.toggle{
     display: none;
 }
 
@@ -138,15 +182,7 @@ p{
     top: 13px;
 }
 
-.nav-settings-items.active{
-    display: block;
-}
-.arrow-down.active{
-    display: none;
-}
-.arrow-up.active{
-    display: block;
-}
+
 
 
 
@@ -155,6 +191,9 @@ p{
 .main-body{
     width: auto;
     margin-left:  18%;
+}
+.main-body.navToggle{
+    margin-left: 8%;
 }
 
 
@@ -190,41 +229,24 @@ p{
     gap: 24px;
 }
 
-.headerSec-dashborad-dropdown .userImg{
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-}
-
-.headerSec-dashborad-dropdown .uesrJob-container{
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    background-color: #6B7280;
-    padding: 0.5em;
-    background-color: #ffffff2f;
-}
-
 .custom-dropdown-btn{
     background-color: transparent;
     border: none;
     color: #fff;
 }
-.custom-dropdown-btn:hover{
-    background-color: transparent;
-    color: #fff;
+
+.custom-dropdown-btn > i {
+    width: 16px;
+    height: 16px;
 }
-.open>.dropdown-toggle.btn-default:focus,
- .open>.dropdown-toggle.btn-default:hover{
-    color: #fff;
-    background-color: transparent;
-}
+
 
 .headerSec-dashborad-dropdown .dropdown{
     display: flex;
     align-items: center;
     color: #fff;
 }
+
 
 .headerSec-line{
     border: 1px solid #ffffff20;
@@ -322,8 +344,18 @@ p{
 .mca-search-box .dropdown > button{
     height: 36px;
     width: 88px;
+    color: #71717A;
+    border: 1px solid #71717A;
     border-radius: 4px;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mca-search-box .dropdown > button > i{
+    width: 16px;
+    height: 16px;
 }
 
 .mca-search-box .search-box > button{

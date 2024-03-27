@@ -14,30 +14,30 @@
 <body>
     <div>
         <div class="full-body">
-            <nav class="navbar-items manrope-font">
-                <div class="minimiser-logo-container">
-                    <div class="minimizer">
+            <nav class="navbar manrope-font">
+                <div class="minimizer-logo-container">
+                    <div class="minimizer" onclick="navToggle()">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="mingcute:menu-fill"  style="color: #000"></i>
                     </div>
                     <div class="company-logo">
                         <img src="assets/logo.svg" alt="logo...">
                     </div>
                 </div>
-                <ul>
+                <ul class="navbar-items">
                     <li class="nav-dashboard">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="mdi:home" style="color: #296BBC;"></i>
-                        <p>Dashboard</p>
+                        <p class="navbar-title">Dashboard</p>
                     </li>
                     <li class="nav-settings">
                         <div class="nav-settings-header">
                             <i class="iconify custom-nav-dashboard-icon" data-icon="clarity:settings-solid"  style="color: #6B7280"></i>
-                            <p>Settings</p>
-                            <div>
+                            <p class="navbar-title">Settings</p>
+                            <div class="arrow-container">
                                 <i id="arrowUp" class="iconify arrow-up" data-icon="ep:arrow-up"  style="color: #9CA3AF" onclick="disableItem()"></i>
                                 <i id="arrowDown" class="iconify arrow-down" data-icon="ep:arrow-down"  style="color: #9CA3AF" onclick="visibleItem()"></i>
                             </div>
                         </div>
-                        <ul id="navItems" class="nav-settings-items">
+                        <ul id="navSettingsItems" class="nav-settings-items">
                             <li>
                                 <img src="assets/nav-line.svg" alt="">
                                 <span>Users</span>
@@ -66,23 +66,23 @@
                     </li>
                     <li class="nav-merchants">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="solar:shop-2-bold"  style="color: #6B7280"></i>
-                        <p>Merchants</p>
+                        <p class="navbar-title">Merchants</p>
                     </li>
                     <li class="nav-investors">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="dashicons:businessman"  style="color: #6B7280"></i>
-                        <p>Investors</p>
+                        <p class="navbar-title">Investors</p>
                     </li>
                     <li class="nav-reports">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="fluent:document-text-24-filled"  style="color: #6B7280"></i>
-                        <p>Reports</p>
+                        <p class="navbar-title">Reports</p>
                     </li>
                     <li class="nav-utilities">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="ph:squares-four-fill"  style="color: #6B7280"></i>
-                        <p>Utilities</p>
+                        <p class="navbar-title">Utilities</p>
                     </li>
                     <li class="nav-logs">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="fluent:box-24-filled"  style="color: #6B7280"></i>
-                        <p>Logs</p>
+                        <p class="navbar-title">Logs</p>
                     </li>
                 </ul>
             </nav>
@@ -96,8 +96,10 @@
                             <div class="dropdown">
                                 <img style="margin-right: 8px;" src="assets/business.svg" alt="image...">
                                 <span>Office <br> Stagging MM</span>
-                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <span class="caret"></span></button>
+                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="iconify" data-icon="ep:arrow-down"></i>
+                                </button>
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Option 1</a></li>
                                   <li><a href="#">Option 2</a></li>
@@ -105,10 +107,12 @@
                                 </ul>
                             </div>
                             <div class="dropdown">
-                                <img class="userImg" src="assets/john.svg" alt="user image...">
+                                <img style="margin-right: 8px;" src="assets/john.svg" alt="user image...">
                                 <span>John <br> QA Role</span>
-                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <span class="caret"></span></button>
+                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="iconify" data-icon="ep:arrow-down"></i>
+                                </button>
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Option 1</a></li>
                                   <li><a href="#">Option 2</a></li>
@@ -166,16 +170,16 @@
                         </div>
                         <div class="mca-search-box">
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                  MCA
-                                  <span class="caret"></span>
+                                <button class="btn dropdown-toggle" type="button"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    MCA
+                                    <i class="iconify" data-icon="ep:arrow-down"></i>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <ul class="dropdown-menu">
                                   <li><a href="#">Action</a></li>
                                   <li><a href="#">Another action</a></li>
                                   <li><a href="#">Something else here</a></li>
                                   <li role="separator" class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
                                 </ul>
                             </div>
                             <div class="search-box">
