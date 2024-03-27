@@ -72,10 +72,11 @@ p{
     padding-inline: 22px;
 }
 
-.minimizer-logo-container .company-logo > img{
+.company-logo-img{
     width: 60px;
     height: 60px;
 }
+
 
 .navbar-items{
     list-style: none;
@@ -812,3 +813,45 @@ p{
     font-weight: 700;
 }
 
+
+
+
+
+
+@media(max-width:800px){
+
+    .minimizer-logo-container{
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+    .navbar-items{
+        padding: 0;
+        padding-top: 40px;
+    }
+    .navbar-title{
+        display: none;
+    }
+    .arrow-container{
+        display: none;
+    }
+    .total-due{
+        gap: 12px;
+        justify-content: center;
+    }
+    .total-due .bar-diagram{
+        width: 80%;
+    }
+    .monthlyStatus-graph-sec .monthlyStatus-graph {
+        gap: 5%;
+    }
+    .rate-graph-sec{
+        justify-content: center;
+        align-items: center;
+    }
+    .rate-graph-sec > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
