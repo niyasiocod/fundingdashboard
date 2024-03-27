@@ -29,24 +29,40 @@
                         <p>Dashboard</p>
                     </li>
                     <li class="nav-settings">
-                        <i class="iconify custom-nav-dashboard-icon" data-icon="clarity:settings-solid"  style="color: #6B7280"></i>
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <h6 class="panel-title">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><p>Settings</p></a>
-                                </h6>
-                              </div>
-                              <div id="collapse1" class="panel-collapse collapse">
-                                <div class="panel-body">Users</div>
-                                <div class="panel-body">Lenders</div>
-                                <div class="panel-body">Email Templates</div>
-                                <div class="panel-body">General Settings</div>
-                                <div class="panel-body">Bank Details</div>
-                                <div class="panel-body">SMS Templates</div>
-                              </div>
+                        <div class="nav-settings-header">
+                            <i class="iconify custom-nav-dashboard-icon" data-icon="clarity:settings-solid"  style="color: #6B7280"></i>
+                            <p>Settings</p>
+                            <div>
+                                <i id="arrowUp" class="iconify arrow-up" data-icon="ep:arrow-up"  style="color: #9CA3AF" onclick="disableItem()"></i>
+                                <i id="arrowDown" class="iconify arrow-down" data-icon="ep:arrow-down"  style="color: #9CA3AF" onclick="visibleItem()"></i>
                             </div>
                         </div>
+                        <ul id="navItems" class="nav-settings-items">
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>Users</span>
+                            </li>
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>Lenders</span>
+                            </li>
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>Email Templates</span>
+                            </li>
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>General Settings</span>
+                            </li>
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>Bank Details</span>
+                            </li>
+                            <li>
+                                <img src="assets/nav-line.svg" alt="">
+                                <span>SMS Templates</span>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-merchants">
                         <i class="iconify custom-nav-dashboard-icon" data-icon="solar:shop-2-bold"  style="color: #6B7280"></i>
@@ -78,29 +94,25 @@
                         </div>
                         <div class="headerSec-dashborad-dropdown">
                             <div class="dropdown">
-                                <img style="margin-right: 1em;" src="assets/business.svg" alt="image...">
+                                <img style="margin-right: 8px;" src="assets/business.svg" alt="image...">
                                 <span>Office <br> Stagging MM</span>
-                                <button class="btn btn-default dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown">
+                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Option 1</a></li>
                                   <li><a href="#">Option 2</a></li>
                                   <li><a href="#">Option 3</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Separated Link</a></li>
                                 </ul>
                             </div>
                             <div class="dropdown">
                                 <img class="userImg" src="assets/john.svg" alt="user image...">
                                 <span>John <br> QA Role</span>
-                                <button class="btn btn-default dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown">
+                                <button class="btn dropdown-toggle custom-dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                   <li><a href="#">Option 1</a></li>
                                   <li><a href="#">Option 2</a></li>
                                   <li><a href="#">Option 3</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Separated Link</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -166,9 +178,11 @@
                                   <li><a href="#">Separated link</a></li>
                                 </ul>
                             </div>
-                            <div>
-                                <i class="iconify search-icon" data-icon="bi:search"  style="color: #fff"></i>
-                                <input class="search" type="search" placeholder="search">
+                            <div class="search-box">
+                                <button>
+                                    <i class="iconify search-icon" data-icon="bi:search"  style="color: #fff"></i>
+                                    <span>Search</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -377,5 +391,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
