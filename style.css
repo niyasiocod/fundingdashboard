@@ -56,6 +56,7 @@ p{
 }
 .navbar.navToggle{
     width: 8%;
+    animation: expand 0.5s linear;
 }
 
 .minimizer-logo-container{
@@ -175,6 +176,7 @@ p{
 .nav-settings-items.active{
     display: block;
     padding-left: 14px;
+    animation: settingsItem 0.5s ease-in-out;
 }
 .nav-settings-items.toggle{
     display: none;
@@ -201,6 +203,7 @@ p{
 }
 .main-body.navToggle{
     margin-left: 8%;
+    animation: margin 0.5s linear;
 }
 
 /* ******************* Header section ***************** */
@@ -888,6 +891,36 @@ p{
         justify-content: center;
         flex-wrap: wrap;
     }
+}
+
+
+@keyframes expand {
+    from {
+        width: 18%;
+    }
+    to {
+        width: 8%;
+    }
+}
+
+@keyframes margin {
+    from {
+        margin-left: 18%;
+    }
+    to {
+        margin-left: 8%;
+    }
+}
+
+@keyframes settingsItem{
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }
 
 
