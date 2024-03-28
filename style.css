@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin:0;
@@ -135,6 +137,7 @@ p{
 
 .arrow-container{
     display: block;
+    display: flex;
 }
 .arrow-container.navToggle{
     display: none;
@@ -144,37 +147,33 @@ p{
     height: 22px;
     width: 22px;
     cursor: pointer;
-    display: block;
+    color: #9CA3AF;
 }
 .arrow-down.active{
-    display: none;
+    color: #fff;
 }
 
 .arrow-up{
     height: 22px; 
     width: 22px; 
-    display: none;
     cursor: pointer;
+    color: #fff;
 }
 .arrow-up.active{
-    display: block;
+    color: #9CA3AF;
 }
 
 
 
 .nav-settings-items{
-    padding-inline: 11px;
     display: none;
 }
 .nav-settings-items.active{
     display: block;
+    padding-left: 14px;
 }
 .nav-settings-items.toggle{
     display: none;
-}
-
-.nav-settings-items > li >{
-    border-left: 1px solid #CACACA;
 }
 
 .nav-settings-items > li > span{
