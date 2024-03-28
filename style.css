@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
 
 *{
     margin:0;
@@ -13,12 +10,16 @@ html{
     box-sizing: border-box;
 }
 
-
 .manrope-font {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+
+html{
+    scroll-behavior: smooth;
 }
 
 ul{
@@ -39,7 +40,7 @@ p{
 
 
 
-
+/* ************** Navbar section********************** */
 
 .navbar{
     width:  18%;
@@ -53,7 +54,6 @@ p{
     box-shadow: 0 1px 3px #00000010;
     padding-block: 40px;
 }
-
 .navbar.navToggle{
     width: 8%;
 }
@@ -83,6 +83,7 @@ p{
     height: 60px;
 }
 
+/* **** Navbar icons & items ***** */
 
 .navbar-items{
     list-style: none;
@@ -124,6 +125,9 @@ p{
     width: 20px;
 }
 
+/* **** Navbar settings options ***** */
+
+
 .navbar .nav-settings{
     display: flex;
     flex-direction: column;
@@ -150,14 +154,14 @@ p{
     color: #9CA3AF;
 }
 .arrow-down.active{
-    color: #fff;
+    color: #F8F9FA;
 }
 
 .arrow-up{
     height: 22px; 
     width: 22px; 
     cursor: pointer;
-    color: #fff;
+    color: #F8F9FA;
 }
 .arrow-up.active{
     color: #9CA3AF;
@@ -188,7 +192,7 @@ p{
 
 
 
-
+/* ********************* Main body ******************* */
 
 
 .main-body{
@@ -199,6 +203,7 @@ p{
     margin-left: 8%;
 }
 
+/* ******************* Header section ***************** */
 
 .header-section{
     height: fit-content;
@@ -209,6 +214,9 @@ p{
     padding: 20px 28px;
     border-bottom: 1px solid #296BBC;
 }
+
+/* **** Header > dashboard ***** */
+
 
 .headerSec-dashborad{
     display: flex;
@@ -234,7 +242,7 @@ p{
 }
 
 .custom-dropdown-btn{
-    background-color: transparent;
+    background-color: #296BBC;
     border: none;
     color: #fff;
 }
@@ -242,6 +250,9 @@ p{
 .custom-dropdown-btn > i {
     width: 16px;
     height: 16px;
+}
+.custom-dropdown-btn:hover{
+    color: #fff;
 }
 
 
@@ -251,10 +262,13 @@ p{
     color: #fff;
 }
 
+/* **** Header > straight line ***** */
 
 .headerSec-line{
     border: 1px solid #ffffff20;
 }
+
+/* **** Header > financial system boxs ***** */
 
 .headerSec-financialSystem{
     list-style: none;
@@ -294,7 +308,7 @@ p{
 
 
 
-
+/* *********************** Content section **************** */
 
 .content-section{
     display: flex;
@@ -305,7 +319,7 @@ p{
     background-color: #FAFAFA;
 }
 
-
+/* *********************** Content >Search section **************** */
 
 .search-section{
     display:flex;
@@ -314,6 +328,8 @@ p{
     justify-content: space-between;
     padding-inline: 28px;
 }
+
+/* ***** Content >Search > checkbox ***** */
 
 .search-section .check-box{
     display: flex;
@@ -339,6 +355,10 @@ p{
     color: #52525B;
     font-weight: normal;
 }
+
+
+/* ***** Content >Search > search box ***** */
+
 
 .mca-search-box{
     display: flex;
@@ -380,7 +400,7 @@ p{
 
 
 
-
+/* ******************* Content > Company pie-diagram & due diagram section ************* */
 
 
 .due-section{
@@ -390,6 +410,8 @@ p{
     gap: 16px;
     padding-inline: 28px;
 }
+
+/* ***** Content > company pie-diagram **** */
 
 .companies{
     display:flex;
@@ -463,6 +485,7 @@ p{
     background-color: #C8E1FF;
 }
 
+
 .due-section .cash-flow{
     display: flex;
     flex-wrap: wrap;
@@ -500,7 +523,7 @@ p{
 }
 
 
-
+/* ***** Content > total due bar chart **** */
 
 .total-due{
     background-color: #fff;
@@ -588,7 +611,7 @@ p{
 }
 
 
-
+/* **************** Content > Porstfolio section ********************* */
 
 
 .portfolio-section{
@@ -627,7 +650,7 @@ p{
 
 
 
-
+/* ************************* Content > Monthly stats section ********************* */
 
 
 .monthlyStatus-section{
@@ -637,6 +660,8 @@ p{
     gap: 16px;
     padding-inline: 28px;
 }
+
+/* ***** Content > Monthly > bar diagram ****** */
 
 .monthlyStatus-graph-sec{
     display: flex;
@@ -741,7 +766,7 @@ p{
     background-color: #E4BF00;
 }
 
-
+/* ***** Content > Monthly > Rate % section ****** */
 
 .rate-graph-sec{
     display: flex;
@@ -864,3 +889,5 @@ p{
         flex-wrap: wrap;
     }
 }
+
+
