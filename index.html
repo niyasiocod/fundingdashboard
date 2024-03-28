@@ -17,7 +17,7 @@
             <nav class="navbar manrope-font">
                 <div class="minimizer-logo-container">
                     <div class="minimizer" onclick="navToggle()">
-                        <i class="iconify custom-nav-dashboard-icon" data-icon="mingcute:menu-fill"  style="color: #000"></i>
+                           <i class="iconify" data-icon="mingcute:menu-fill"  style="color: #000; width: 20px; height: 20px;"></i>
                     </div>
                     <div class="company-logo">
                         <img class="company-logo-img" src="assets/logo.svg" alt="logo...">
@@ -32,9 +32,9 @@
                         <div class="nav-settings-header">
                             <i class="iconify custom-nav-dashboard-icon" data-icon="clarity:settings-solid"  style="color: #6B7280"></i>
                             <p class="navbar-title">Settings</p>
-                            <div class="arrow-container">
-                                <i id="arrowUp" class="iconify arrow-up" data-icon="ep:arrow-up"  style="color: #9CA3AF" onclick="disableItem()"></i>
-                                <i id="arrowDown" class="iconify arrow-down" data-icon="ep:arrow-down"  style="color: #9CA3AF" onclick="visibleItem()"></i>
+                            <div class="arrow-container" onclick="navSettingsToggle()">
+                                <i id="arrowUp" class="iconify arrow-up" data-icon="ep:arrow-up"  style="color: #9CA3AF" ></i>
+                                <i id="arrowDown" class="iconify arrow-down" data-icon="ep:arrow-down"  style="color: #9CA3AF" ></i>
                             </div>
                         </div>
                         <ul id="navSettingsItems" class="nav-settings-items">

@@ -38,14 +38,29 @@ const navToggle = () => {
     n++;
 }
 
-const visibleItem = () => {
-    navSettingsItems.classList.add("active");
-    arrowUp.classList.add("active");
-    arrowDown.classList.add("active");
-}
+// const visibleItem = () => {
+//     navSettingsItems.classList.add("active");
+//     arrowUp.classList.add("active");
+//     arrowDown.classList.add("active");
 
-const disableItem = () => {
-    navSettingsItems.classList.remove("active");
-    arrowUp.classList.remove("active");
-    arrowDown.classList.remove("active");
+// }
+
+// const disableItem = () => {
+//     navSettingsItems.classList.remove("active");
+//     arrowUp.classList.remove("active");
+//     arrowDown.classList.remove("active");
+// }
+
+let x=1;
+const navSettingsToggle = () =>{
+    if(x%2 != 0){
+        navSettingsItems.classList.add("active");
+        arrowUp.classList.add("active");
+        arrowDown.classList.add("active");
+    }else{
+        navSettingsItems.classList.remove("active");
+        arrowUp.classList.remove("active");
+        arrowDown.classList.remove("active");
+    }
+    x++;
 }

@@ -136,27 +136,26 @@ p{
     display: none;
 }
 
-.arrow-up{
-    height: 22px; 
-    width: 22px; 
-    display: none;
-    cursor: pointer;
-    animation-duration: 1sec;
-}
-.arrow-up.active{
-    display: block;
-}
-
 .arrow-down{
     height: 22px;
     width: 22px;
     cursor: pointer;
     display: block;
-    animation-duration: 1sec;
 }
 .arrow-down.active{
     display: none;
 }
+
+.arrow-up{
+    height: 22px; 
+    width: 22px; 
+    display: none;
+    cursor: pointer;
+}
+.arrow-up.active{
+    display: block;
+}
+
 
 
 .nav-settings-items{
@@ -825,6 +824,10 @@ p{
         gap: 16px;
         padding: 0;
     }
+    .company-logo-img{
+        width: 30px;
+        height: 30px;
+    }
     .navbar-items{
         padding: 0;
         padding-top: 40px;
@@ -838,6 +841,7 @@ p{
     .total-due{
         gap: 12px;
         justify-content: center;
+        flex: 1;
     }
     .total-due .bar-diagram{
         width: 80%;
