@@ -58,6 +58,10 @@ p{
     width: 8%;
     animation: reduce 0.5s linear;
 }
+.navbar.arrowUp{
+    width: 18%;
+    animation: expand 0.5s linear;
+}
 
 .minimizer-logo-container{
     display: flex;
@@ -207,6 +211,10 @@ p{
 .main-body.navToggle{
     margin-left: 8%;
     animation: margin 0.5s linear;
+}
+.main-body.arrowUp{
+    margin-left: 18%;
+    animation: marginDefault 0.5s linear;
 }
 
 /* ******************* Header section ***************** */
@@ -911,6 +919,15 @@ p{
     }
 }
 
+@keyframes expand {
+    from {
+        width: 8%;
+    }
+    to{
+        width: 18%;
+    }
+}
+
 
 @keyframes margin {
     from {
@@ -918,6 +935,15 @@ p{
     }
     to {
         margin-left: 8%;
+    }
+}
+
+@keyframes marginDefault{
+    from{
+        margin-left: 8%;
+    }
+    to {
+        margin-left: 18%;
     }
 }
 

@@ -1,6 +1,6 @@
 const navSettingsItems = document.getElementById('navSettingsItems');
-const arrowUp = document.getElementById('arrowUp');
-const arrowDown = document.getElementById('arrowDown');
+// const arrowUp = document.getElementById('arrowUp');
+// const arrowDown = document.getElementById('arrowDown');
 
 
 const navbar = document.getElementsByClassName('navbar')[0];
@@ -24,6 +24,9 @@ const navToggle = () => {
         for(let i =0; i<navbarTitle.length; i++){
             navbarTitle[i].classList.remove("navToggle");
         }
+        main.classList.add("arrowUp");
+        navbar.classList.add("arrowUp");
+
     }else{
         minimizerLogoContainer.classList.add("navToggle");
         navbar.classList.add("navToggle");
@@ -33,6 +36,8 @@ const navToggle = () => {
         for(let i =0; i<navbarTitle.length; i++){
             navbarTitle[i].classList.add("navToggle");
         }
+        main.classList.remove("arrowUp");
+        navbar.classList.remove("arrowUp");
     }
     
     n++;
