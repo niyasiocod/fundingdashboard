@@ -703,34 +703,29 @@ p{
     transform: scaleY(-1);
 }
 
+.monthlyStatus-graph > li {
+    width: 36px;
+    border-radius: 0 0 2px 2px;
+}
+
 .bar-funded{
     height: 126px;
-    width: 36px;
-    border-radius: 2px 2px 0 0;
     background-color: #DB2777;
 }
 .bar-RTR{
     height: 103px;
-    width: 36px;
-    border-radius: 2px 2px 0 0;
     background-color: #9333EA;
 }
 .bar-CTD{
     height: 103px;
-    width: 36px;
-    border-radius: 2px 2px 0 0;
     background-color: #2BB2FE;
 }
 .bar-synd{
     height: 42px;
-    width: 36px;
-    border-radius: 2px 2px 0 0;
     background-color: #82B63F;
 }
 .bar-nonSynd{
     height: 78px;
-    width: 36px;
-    border-radius: 2px 2px 0 0;
     background-color: #E4BF00;
 }
 
@@ -874,6 +869,9 @@ p{
     .arrow-container{
         display: none;
     }
+    .nav-settings-items.active{
+        display: none;
+    }
     .total-due{
         gap: 12px;
         justify-content: center;
@@ -894,6 +892,12 @@ p{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width:400px){
+    .monthlyStatus-graph > li {
+        width: 8dvw;
     }
 }
 
