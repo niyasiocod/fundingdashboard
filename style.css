@@ -56,7 +56,7 @@ p{
 }
 .navbar.navToggle{
     width: 8%;
-    animation: expand 0.5s linear;
+    animation: reduce 0.5s linear;
 }
 
 .minimizer-logo-container{
@@ -175,12 +175,15 @@ p{
 }
 .nav-settings-items.active{
     display: block;
+    margin-top: -12px;
     padding-left: 14px;
-    animation: settingsItem 0.5s ease-in-out;
+    padding-bottom: 12px;
+    animation: settingsItem 0.5s linear;
 }
 .nav-settings-items.toggle{
     display: none;
 }
+
 
 .nav-settings-items > li > span{
     font-size: 12px;
@@ -445,6 +448,7 @@ p{
 
 .pie-diagram-sec{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -849,7 +853,7 @@ p{
 
 
 
-@media(max-width:800px){
+@media(max-width:900px){
 
     .minimizer-logo-container{
         flex-direction: column;
@@ -857,8 +861,8 @@ p{
         padding: 0;
     }
     .company-logo-img{
-        width: 30px;
-        height: 30px;
+        width: 7dvw;
+        height: 7dvw;
     }
     .navbar-items{
         padding: 0;
@@ -894,7 +898,7 @@ p{
 }
 
 
-@keyframes expand {
+@keyframes reduce {
     from {
         width: 18%;
     }
@@ -902,6 +906,7 @@ p{
         width: 8%;
     }
 }
+
 
 @keyframes margin {
     from {
@@ -922,5 +927,6 @@ p{
         transform: translateY(0);
       }
 }
+
 
 
