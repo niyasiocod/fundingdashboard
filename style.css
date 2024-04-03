@@ -379,7 +379,7 @@ p{
     gap: 12px;
 }
 
-.mca-search-box .dropdown > button{
+.mca-search-box .dropdown .dropdown-toggle{
     height: 36px;
     width: 88px;
     color: #71717A;
@@ -391,21 +391,21 @@ p{
     justify-content: space-between;
 }
 
-.mca-search-box .dropdown > button > i{
-    width: 16px;
-    height: 16px;
-}
-
-.mca-search-box .search-box > button{
+.mca-search-box .search-box .search-box-btn{
     height: 36px;
     width: 99px;
+    border: none;
     background-color: black;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
     padding: 8px 16px;
     border-radius: 4px;
 }
 
-.search-box > button > span{
+.search-box .search-box-btn > span{
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
